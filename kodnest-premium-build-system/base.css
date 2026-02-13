@@ -1,0 +1,56 @@
+/**
+ * KodNest Premium Build System — Base
+ * Reset, typography, and base element styles.
+ */
+
+/* Minimal reset — preserve only what we need */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  background: var(--kn-background);
+  color: var(--kn-text);
+  font-family: var(--kn-font-body);
+  font-size: var(--kn-size-body);
+  line-height: var(--kn-line-height-body);
+}
+
+/* Typography */
+.kn-heading,
+h1.kn, h2.kn, h3.kn {
+  font-family: var(--kn-font-heading);
+  font-weight: var(--kn-weight-heading);
+  letter-spacing: var(--kn-letter-spacing-heading);
+  color: var(--kn-text);
+  margin: 0 0 var(--kn-space-sm);
+}
+
+h1.kn, .kn-h1 { font-size: var(--kn-size-h1); }
+h2.kn, .kn-h2 { font-size: var(--kn-size-h2); }
+h3.kn, .kn-h3 { font-size: var(--kn-size-h3); }
+
+.kn-body-text {
+  font-size: clamp(var(--kn-size-body-min), var(--kn-size-body), var(--kn-size-body-max));
+  line-height: var(--kn-line-height-body);
+  max-width: var(--kn-measure);
+}
+
+.kn-text-muted {
+  color: var(--kn-color-text-muted);
+}
+
+/* Transitions (global rule) */
+.kn-transition,
+button.kn, .kn-btn, input.kn, textarea.kn, .kn-card, .kn-badge {
+  transition: border-color var(--kn-transition-duration) var(--kn-transition-ease),
+              background-color var(--kn-transition-duration) var(--kn-transition-ease),
+              color var(--kn-transition-duration) var(--kn-transition-ease),
+              box-shadow var(--kn-transition-duration) var(--kn-transition-ease);
+}

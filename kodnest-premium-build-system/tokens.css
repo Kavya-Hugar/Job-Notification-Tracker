@@ -1,0 +1,85 @@
+/**
+ * KodNest Premium Build System — Design Tokens
+ * Calm, intentional, coherent. Maximum 4 colors. No gradients, no noise.
+ */
+
+:root {
+  /* ——— Color (4-color system) ——— */
+  --kn-background: #F7F6F3;
+  --kn-text: #111111;
+  --kn-accent: #8B0000;
+  --kn-success: #4A5D4A;
+  --kn-warning: #8B6914;
+
+  /* Semantic aliases */
+  --kn-color-bg: var(--kn-background);
+  --kn-color-text: var(--kn-text);
+  --kn-color-text-muted: #3D3D3D;
+  --kn-color-accent: var(--kn-accent);
+  --kn-color-success: var(--kn-success);
+  --kn-color-warning: var(--kn-warning);
+  --kn-color-border: #D8D6D2;
+  --kn-color-border-focus: var(--kn-accent);
+
+  /* ——— Typography ——— */
+  --kn-font-heading: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --kn-font-body: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --kn-size-body: 17px;
+  --kn-size-body-min: 16px;
+  --kn-size-body-max: 18px;
+  --kn-line-height-body: 1.65;
+  --kn-line-height-body-max: 1.8;
+  --kn-measure: 720px;
+
+  --kn-size-h1: 2.25rem;
+  --kn-size-h2: 1.75rem;
+  --kn-size-h3: 1.25rem;
+  --kn-weight-heading: 600;
+  --kn-weight-body: 400;
+  --kn-letter-spacing-heading: 0.02em;
+
+  /* ——— Spacing (strict scale: 8, 16, 24, 40, 64) ——— */
+  --kn-space-xs: 8px;
+  --kn-space-sm: 16px;
+  --kn-space-md: 24px;
+  --kn-space-lg: 40px;
+  --kn-space-xl: 64px;
+
+  /* ——— Layout ——— */
+  --kn-workspace-ratio: 70%;
+  --kn-panel-ratio: 30%;
+  --kn-topbar-height: 56px;
+  --kn-context-header-padding: var(--kn-space-lg) 0;
+  --kn-footer-min-height: 80px;
+
+  /* ——— Components ——— */
+  --kn-radius: 6px;
+  --kn-radius-button: 6px;
+  --kn-border-width: 1px;
+  --kn-border: var(--kn-border-width) solid var(--kn-color-border);
+  --kn-shadow: none;
+  --kn-transition-duration: 180ms;
+  --kn-transition-ease: ease-in-out;
+
+  /* Buttons */
+  --kn-btn-primary-bg: var(--kn-accent);
+  --kn-btn-primary-text: #FFFFFF;
+  --kn-btn-primary-hover-bg: #6D0000;
+  --kn-btn-secondary-bg: transparent;
+  --kn-btn-secondary-border: var(--kn-accent);
+  --kn-btn-secondary-text: var(--kn-accent);
+  --kn-btn-padding-y: var(--kn-space-xs);
+  --kn-btn-padding-x: var(--kn-space-sm);
+
+  /* Inputs */
+  --kn-input-border: var(--kn-border);
+  --kn-input-padding: var(--kn-space-xs) var(--kn-space-sm);
+  --kn-input-focus-outline: 2px solid var(--kn-accent);
+  --kn-input-focus-outline-offset: 2px;
+
+  /* Cards */
+  --kn-card-border: var(--kn-border);
+  --kn-card-padding: var(--kn-space-md);
+  --kn-card-bg: var(--kn-background);
+}
